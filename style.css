@@ -20,3 +20,23 @@ h1{text-align: center;}
     margin:10%;
     background:lightgrey;
 }
+
+
+
+#color_1{background:brown;}
+#color_2{background:black;}
+#color_3{background:tan;}
+#color_4{background: red;}
+#color_5{background:olive;}
+#color_6{background: skyblue;}
+#color_7{background: burlywood}
+#color_8{background:orange;}
+#color_9{background:grey;}
+
+.color-palet{
+    margin:10px;
+    margin-top:10%;
+    min-height:35px;
+    background:green;
+    
+}

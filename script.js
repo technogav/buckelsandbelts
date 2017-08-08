@@ -35,17 +35,24 @@ var scotchApp = angular.module('scotchApp', ['ngRoute']);
 
     scotchApp.controller('contactController', function($scope) {
         $scope.message = 'Contact us! JK. This is just a demo.';
-    })
+    });
 
-    
+
+
+      
     
     //directives
-    App.directive('directiveName', function() {
+     scotchApp.directive('directiveName', function() {
         return {
             restrict: 'A',
             link: function(scope, element, attrs) {
-                $(#target).dial(scope.$eval(attrs.directiveName));
-            }
+                angular.element(".target").dial(scope.$eval(attrs.directiveName));
+                console.log(attrs(data-min));
+                  
+            },
+            template :  '<div class="target" style="min-width:20px;min-height:20px;background:green;">{{$scope.message}}</div>'
+             
+           
         }
 
-    });
+    }); 
